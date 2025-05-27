@@ -10,7 +10,12 @@ function [strtInd] = strtIndex(input_vec)
 %       strtInd   : 1-based index of the first sequence of 3 consecutive
 %                   positive (>0) values. Returns -1 if not found.
 %
-
+% @ Author: Dr. Tanuj Puri
+% @ Date:   01/2014
+% @ Warning: This is an untested code/implementation and should be used
+% with caution in clinical and pre-clinical settings. The author takes no 
+% responsibility of any kind about the output results from this code.
+%
     %% --- Input Validation ---
     if nargin ~= 1
         error('Function requires exactly one input argument.');
