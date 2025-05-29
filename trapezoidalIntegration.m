@@ -1,7 +1,7 @@
 function [cumsum_trapezoids] = trapezoidalIntegration(time_resampled, Cp_resampled)
 % TRAPEZOIDALINTEGRATION Compute cumulative AUC using trapezoidal rule.
 %
-%   cumsum_trapezoids = TrapezoidalIntegration(time_resampled, Cp_resampled)
+%   cumsum_trapezoids = trapezoidalIntegration(time_resampled, Cp_resampled)
 %
 %   This function computes the area under the Cp vs time curve using the
 %   trapezoidal rule and returns the cumulative sum of trapezoidal areas.
