@@ -1,16 +1,16 @@
-function [Cp] = HctCorrection(Cb, Hct)
-% HctCorrection calculates plasma concentration (Cp)
+function [Cp] = hctCorrection(Cb, Hct)
+%% HctCORRECTION calculates plasma concentration (Cp)
 % from whole blood concentration (Cb), corrected for hematocrit (Hct)
 %
-% @ Author: Dr. Tanuj Puri
-% @ Date:   01/2014
-% @ Warning: This is an untested code/implementation and should be used
+% Author: Dr. Tanuj Puri
+% Date:   01/2014
+% Warning: This is an untested code/implementation and should be used
 % with caution in clinical and pre-clinical settings. The author takes no 
 % responsibility of any kind about the output results from this code.
 %
 % Syntax:
-%   Cp = HctCorrection(Cb)
-%   Cp = HctCorrection(Cb, Hct)
+%   Cp = hctCorrection(Cb)
+%   Cp = hctCorrection(Cb, Hct)
 %
 % Inputs:
 %   Cb  - Blood concentration (numeric scalar or vector, non-negative)
@@ -19,15 +19,15 @@ function [Cp] = HctCorrection(Cb, Hct)
 % Outputs:
 %   Cp  - Plasma concentration (same size as Cb)
 %
-%
+%%
     % Check number of input arguments
     if nargin < 1 || nargin > 2
-        error('HctCorrection requires 1 or 2 input arguments.');
+        error('hctCorrection requires 1 or 2 input arguments.');
     end
 
     % Check number of output arguments
     if nargout > 1
-        error('HctCorrection returns only one output argument.');
+        error('hctCorrection returns only one output argument.');
     end
 
     % Check Cb: must be numeric, non-complex, real, finite, non-negative, scalar or vector
