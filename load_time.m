@@ -1,5 +1,5 @@
 function [time] = load_time(varargin)
-%% LOAD_TIME Load a time vector from a .mat file and perform strict validation.
+%% LOAD_TIME Load a time (at which Cp and Ct are sampled) vector from a .mat file and perform strict validation.
 %
 %   time = load_time() loads the default file 'D:\time_D_0.1.mat'.
 %   time = load_time(filepath) loads the time vector from the specified file.
