@@ -1,5 +1,5 @@
 function [Cp] = load_Cp(varargin)
-%% LOAD_CP Load a Cp vector from a .mat file and perform strict validation.
+%% LOAD_CP Load a Cp (plasma time-activity curve) vector from a .mat file and perform strict validation.
 %
 %   Cp = load_Cp() loads the default file 'D:\Cp_D_0.1.mat'.
 %   Cp = load_Cp(filepath) loads the Cp vector from the specified file.
