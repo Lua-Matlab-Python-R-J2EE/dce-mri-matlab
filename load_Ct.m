@@ -22,7 +22,11 @@ function [Ct] = load_Ct(varargin)
     if nargin == 1
         loc = varargin{1};
     else
-        loc = 'D:\Ct_D_0.1.mat';
+        % loc = 'D:\Ct_D_0.1.mat'; % hardcoded path
+        
+        % Ct.mat has been provided (with variable anmed Ct) and should exist in the current directory; 
+        % otherwise, a function named create_Realistic_Ct.m is available to generate it.  
+        loc = fullfile(pwd, 'Ct.mat'); 
     end
 
     %% Check if file exists
