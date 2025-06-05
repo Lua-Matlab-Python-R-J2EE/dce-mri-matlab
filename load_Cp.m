@@ -22,7 +22,11 @@ function [Cp] = load_Cp(varargin)
     if nargin == 1
         loc = varargin{1};
     else
-        loc = 'D:\Cp_D_0.1.mat';
+        % loc = 'D:\Cp_D_0.1.mat'; % hard coded path
+
+        % Cp.mat has been provided (with variable named Cp) and should exist in the current directory; 
+        % otherwise, a function named create_Realistic_Cp.m is available to generate it.  
+        loc = fullfile(pwd, 'Cp.mat');         
     end
 
     %% Check if file exists
