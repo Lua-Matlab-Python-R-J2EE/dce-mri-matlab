@@ -5,7 +5,7 @@ function val = isoValue(data)
 %   Copyright 1984-2002 The MathWorks, Inc. 
 %   $Revision: 1.6 $  $Date: 2002/06/17 13:37:43 $
 % -------------------------------------------------------------------------------------
-%   Comments updated by Dr. Tanuj Puri, dated 01/2014
+%   Comments updated by Dr. Tanuj Puri, dated 01/2014, updated 2025
 %   This function computes a value based on the histogram distribution of input `data`.
 %   The intent appears to be to identify a central or stable value in the distribution,
 %   excluding outliers or disproportionately large peaks (such as background noise).
