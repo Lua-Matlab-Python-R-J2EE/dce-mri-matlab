@@ -1,12 +1,14 @@
 function test_hctCorrection()
-%% TEST_HCTCORRECTION Unit tests for the hctCorrection function.
+%
+% TEST_HCTCORRECTION test function for the hctCorrection function.
 %
 % Author: Dr. Tanuj Puri
-% Date:   01/2014
+% Date:   01/2014, updated 2025
 % Warning: This is an untested code/implementation and should be used
 % with caution in clinical and pre-clinical settings. The author takes no 
 % responsibility of any kind about the output results from this code.
 %
+
 %% Define all test cases as strings
     tests = {
         "Cp = hctCorrection([1.5, 2.0], 0.38);"     % Custom Hct
