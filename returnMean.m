@@ -15,7 +15,7 @@ function [meanVal] = returnMean(calcVecSlice, segmentedROIslice)
 %   Output:
 %     meanVal              - Mean of valid values in ROI (NaN if none)
 %
-%   Author:  Dr. Tanuj Puri, dated 01/2014
+%   Author:  Dr. Tanuj Puri, dated 01/2014, updated 2025
 %   Warning: This is an untested code/implementation and should be used
 %            with caution in clinical and pre-clinical settings. The author takes no 
 %            responsibility of any kind about the output results from this code.
