@@ -14,11 +14,11 @@ function [peakVal, peakInd] = peakIndex(input_vec)
 %       [val, idx] = peakIndex([1 5 3 5 2])
 %       % val = 5, idx = 2
 %
-% @ Author: Dr. Tanuj Puri
-% @ Date:   01/2014
-% @ Warning: This is an untested code/implementation and should be used
-% with caution in clinical and pre-clinical settings. The author takes no 
-% responsibility of any kind about the output results from this code.
+%   Author: Dr. Tanuj Puri
+%   Date:   01/2014, updated 2025
+%   Warning: This is an untested code/implementation and should be used
+%   with caution in clinical and pre-clinical settings. The author takes no 
+%   responsibility of any kind about the output results from this code.
 %
     %% Input validation
     if nargin ~= 1
