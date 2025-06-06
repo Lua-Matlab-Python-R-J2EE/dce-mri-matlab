@@ -8,7 +8,7 @@ function Cp = create_Realistic_Cp()
 % It also saves the Cp values as a .mat file.
 %
 % Author: Dr. Tanuj Puri 
-% Date: 01/2014 
+% Date:   01/2014, updated 2025
 % Warning: This is an untested code/implementation and should be used
 % with caution in clinical and pre-clinical settings.
 %
