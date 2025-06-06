@@ -18,7 +18,7 @@ function [cumsum_trapezoids] = trapezoidalIntegration(time_resampled, Cp_resampl
 %       cumsum_trapezoids(1) = 0 by definition (area before t=0).
 %
 %   Author: Dr. Tanuj Puri
-%   Date:   01/2014
+%   Date:   01/2014, updated 2025
 %   Warning: This is an untested code/implementation and should be used
 %            with caution in clinical and pre-clinical settings. The author takes  
 %            no responsibility of any kind about the output results from this code.
