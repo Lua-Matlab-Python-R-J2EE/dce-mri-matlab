@@ -1,13 +1,14 @@
 function test_timeDiff()
-%% TEST_TIMEDIFF: Unit tests for the timeDiff function.
+%
+% TEST_TIMEDIFF: Unit tests for the timeDiff function.
 % This function checks a variety of valid and invalid scenarios to ensure the function behaves correctly.
 %
 % Author: Dr. Tanuj Puri
-% Date:   01/2014
+% Date:   01/2014, updated 2025
 % Warning: This is an untested code/implementation and should be used
 % with caution in clinical and pre-clinical settings. The author takes no 
 % responsibility of any kind about the output results from this code.
-%%
+%
 fprintf('\nRunning test_timeDiff()...\n');
 
 % Initialize test cases as a struct array
