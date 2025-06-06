@@ -5,7 +5,7 @@ function test_getNonfiniteMap()
 % input validation, visualization flag handling, and expected edge cases.
 %
 % Author: Dr. Tanuj Puri 
-% Date: 01/2014 (adapted from test_getInfMap)
+% Date: 01/2014 (adapted from test_getInfMap), updated 2025
 % Warning: This is an untested code/implementation and should be used
 % with caution in clinical and pre-clinical settings.
 %
