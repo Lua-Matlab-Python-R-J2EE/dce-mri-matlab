@@ -11,7 +11,7 @@ function [notfinite_Ct, count] = getNonfiniteMap(R1t_, visualize)
 %   count        : Total number of such values
 %
 % Author: Dr. Tanuj Puri (adapted from getInfMap)
-% Date  : 01/2014 
+% Date  : 01/2014, updated 2025 
 %
     if nargin < 1
         error('getNonfiniteMap:MissingInput', 'Input matrix R1t_ is required.');
