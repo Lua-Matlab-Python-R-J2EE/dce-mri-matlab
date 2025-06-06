@@ -1,7 +1,7 @@
 function [time] = load_time(varargin)
 %% LOAD_TIME Load a time (at which Cp and Ct are sampled) vector from a .mat file and perform strict validation.
 %
-%   time = load_time() loads the default file 'D:\time_D_0.1.mat'.
+%   time = load_time() loads the default file 'time.mat' in the current directory.
 %   time = load_time(filepath) loads the time vector from the specified file.
 %
 %   The loaded data must:
@@ -13,7 +13,7 @@ function [time] = load_time(varargin)
 %       time = load_time('data/mytime.mat');
 %
 %   Author: Dr. Tanuj Puri
-%   Date:   01/2014
+%   Date:   01/2014, updated 2025
 %   Warning: This is an untested code/implementation and should be used
 %            with caution in clinical and pre-clinical settings. The author takes no 
 %            responsibility of any kind about the output results from this code.
@@ -22,7 +22,10 @@ function [time] = load_time(varargin)
     if nargin == 1
         loc = varargin{1};
     else
-        loc = 'D:\time_D_0.1.mat';
+        % loc = 'D:\time_D_0.1.mat';% hard coded
+        
+        % time.mat has been provided (with variable named time) and should exist in the current directory;         
+        loc = fullfile(pwd, 'time.mat');           
     end
 
     %% Check if file exists
