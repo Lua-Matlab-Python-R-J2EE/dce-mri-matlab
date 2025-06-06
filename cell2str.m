@@ -15,7 +15,7 @@ function string = cell2str(cellstr)
 %------------------------------------------------------------------------------
 % % DISCLAIMER: This function was not authored by me; it was taken from another 
 %               source and was used as-is without modifications or testing.
-%               Comments updated by Dr. Tanuj Puri, dated 01/2014
+%               Comments updated by Dr. Tanuj Puri, dated 01/2014, updated 2025
 %------------------------------------------------------------------------------
 % Validate number of input arguments
 if nargin ~= 1
