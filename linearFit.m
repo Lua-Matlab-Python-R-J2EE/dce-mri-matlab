@@ -17,7 +17,7 @@ function [slope, intercept, yfit, R_squared] = linearFit(xVal, yVal)
 %       [m, b, yfit, R2] = linearFit( 1:5, [2 4 5 4 5] )
 %
 %   Author: Dr. Tanuj Puri 
-%   Date: 01/2014
+%   Date: 01/2014, updated 2025
 %   Disclaimer: Untested code so use with caution at your own risk.
 %
 %% --- Input Validation ---
