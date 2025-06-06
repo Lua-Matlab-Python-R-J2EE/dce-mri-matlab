@@ -8,7 +8,7 @@ function Ct = create_Realistic_Ct()
 % It also saves the Ct values as a .mat file.
 %
 % Author: Dr. Tanuj Puri 
-% Date: 01/2014 
+% Date:   01/2014, updated 2025
 % Warning: This is an untested code/implementation and should be used
 % with caution in clinical and pre-clinical settings.
 %
