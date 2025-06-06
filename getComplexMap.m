@@ -15,7 +15,7 @@ function [complex_Ct, count] = getComplexMap(R1t_, visualize)
 %   - Validates that input is 2D/3D only
 %
 % Author: Dr. Tanuj Puri 
-% Date: 01/2014 (adapted from getInfMap)
+% Date: 01/2014 (adapted from getInfMap), updated 2025
 % Warning: This is an untested code/implementation and should be used
 % with caution in clinical and pre-clinical settings.
 %
