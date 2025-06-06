@@ -1,11 +1,12 @@
 function test_returnMean()
+%
 % TEST_RETURNMEAN Unit tests for returnMean function.
 %
 % This function checks a variety of input cases, both valid and invalid,
 % to verify correctness and robustness of returnMean.
 %
 % Author: Dr. Tanuj Puri
-% Date:   01/2014
+% Date:   01/2014, updated 2025
 % Warning: This is an untested code/implementation and should be used
 % with caution in clinical and pre-clinical settings. The author takes no 
 % responsibility of any kind about the output results from this code.
