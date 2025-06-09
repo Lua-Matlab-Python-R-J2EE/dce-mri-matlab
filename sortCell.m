@@ -1,4 +1,4 @@
-function Y = sortcell(X, DIM)
+function Y = sortCell(X, DIM)
 %
 % DISCLAIMER: This function was not authored by me; it was taken from another 
 %             source and was used as-is without modifications or testing.
@@ -8,7 +8,7 @@ function Y = sortcell(X, DIM)
 % Description: SORTCELL sorts the input cell array according to the
 %   dimensions (columns) specified by the user.
 %
-% Usage: Y = sortcell(X, DIM)
+% Usage: Y = sortCell(X, DIM)
 %
 % Input:
 %	   X: the cell array to be sorted.
@@ -21,7 +21,7 @@ function Y = sortcell(X, DIM)
 % Output: 
 %     Y: the sorted cell array.
 %
-% Example:    Y = sortcell(X, [3 2])
+% Example:    Y = sortCell(X, [3 2])
 %
 % Note that this function has only been tested on mixed cell arrays
 % containing character strings and numeric values.
@@ -64,14 +64,14 @@ elseif nargin > 2
 end
 
 % Now find out if the cell array is being sorted on more than one column.
-% If it is then use recursion to call the sortcell function again to sort
-% the less important columns first. Repeat calls to sortcell until only one
+% If it is then use recursion to call the sortCell function again to sort
+% the less important columns first. Repeat calls to sortCell until only one
 % column is left to be sorted. Then return the sorted cell array to the
 % calling function to continue with the higher priority sorting.
 ndim = length(DIM);
 if ndim > 1
 	col = DIM(2:end);
-	X = sortcell(X, col);
+	X = sortCell(X, col);
 end
 
 % Get the dimensions of the input cell array.
