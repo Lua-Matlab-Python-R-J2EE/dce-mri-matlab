@@ -103,9 +103,10 @@ function [Mo, R1o, sse] = measureMoR1o_fast_VTR(signal, repTime, FA, doPlot, var
   end
 
   % Initial guess for Mo and T1o (sec). These are scaled later per trial.
-  mo_  = 5000;   % Initial guess for Mo
-  t1o_ = 1.30;   % Initial guess for T1o (in seconds)
-
+  % mo_  = 5000;   % Initial guess for Mo
+  % t1o_ = 1.30;   % Initial guess for T1o (in seconds)
+  % Above is a bad guess. function won't work without a good initail guess
+  
   % Initialize storage for sum of squared errors (SSE) for each repetition
   sse_ = Inf(1, repitition);
 
