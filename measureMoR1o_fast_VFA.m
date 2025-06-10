@@ -154,7 +154,7 @@ function [Mo, R1o, sse] = measureMoR1o_fast_VFA(signal, alpha, TR, doPlot, varar
       % x0 = [mo_ * repIdx, 1 / (t1o_ * repIdx)];
       % Above is a bad guess. function won't work without a good initail guess
 
-      % New better guess
+      % New better guess: V.IMPORTANT
       Mo_guess       = 5*max(signal) * (0.9 + 0.2 * rand);
       R1o_guess      = (1 / 1.2) * (0.9 + 0.2 * rand);
       Mo_guess       = max(Mo_guess, 1);     % prevent near-zero
