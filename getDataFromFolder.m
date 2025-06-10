@@ -66,7 +66,8 @@ function [ Y,Loc,FA,ST,SD,repT,Pid,Info,FA_ST,repT_ST] ...
 %    [Y,Loc,FA,ST,SD,repT,Pid,Info,FA_ST,repT_ST] = getDataFromFolder(parentdir,'tip');% data from VFA
 %    or
 %    [Y,Loc,FA,ST,SD,repT,Pid,Info,FA_ST,repT_ST] = getDataFromFolder(parentdir,'vtr');% data from VTR
-%
+%    or
+%    [Y,Loc,FA,ST,SD,repT,Pid,Info,FA_ST,repT_ST] = getDataFromFolder(parentdir,'dce');% data from DCE
 %
 % =========================================================================
 % DATA ORGANIZATION EXPLANATION 
