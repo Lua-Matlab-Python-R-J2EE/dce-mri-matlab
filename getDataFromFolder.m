@@ -61,6 +61,11 @@ function [ Y,Loc,FA,ST,SD,repT,Pid,Info,FA_ST,repT_ST] ...
 %
 % AUTHOR: Dr. Tanuj Puri
 % DATE:   01/2014, updated 06/2025
+% 
+% Example:
+%    [Y,Loc,FA,ST,SD,repT,Pid,Info,FA_ST,repT_ST] = getDataFromFolder(parentdir,'tip');% data from VFA
+%    or
+%    [Y,Loc,FA,ST,SD,repT,Pid,Info,FA_ST,repT_ST] = getDataFromFolder(parentdir,'vtr');% data from VTR
 %
 %--------------------------------------------------------------------------
 
