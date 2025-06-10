@@ -58,6 +58,9 @@ function [Mo, R1o, sse] = measureMoR1o_fast_VFA(signal, alpha, TR, doPlot, varar
 %   - Internal helper function `T1_Cal` models the VFA signal equation.
 %   - The function uses multiple initial guesses to avoid convergence to
 %     local minima and returns the solution with the lowest fitting error.
+%   - WATER:  mo_=5000; t1o_=3.92;
+%   - LUNG:   mo_=5000; t1o_=1.30;
+%   - KIDNEY: mo_=50;   t1o_=1.50;
 %
 %--------------------------------------------------------------------------
 % AUTHOR:  Dr. Tanuj Puri
