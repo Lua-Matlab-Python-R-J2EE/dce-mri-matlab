@@ -1,6 +1,6 @@
 function test_measureMoR1o_fast_VTR()
 %--------------------------------------------------------------------------
-% FUNCTION: test_measureMoR1o_fast_VTR_multiCase
+% FUNCTION: test_measureMoR1o_fast_VTR
 %
 % PURPOSE:
 %   Runs a series of synthetic tests on the function
@@ -121,4 +121,4 @@ function test_measureMoR1o_fast_VTR()
     fprintf('Number of FAILURES:     %d\n', failed_cases);
     fprintf('Pass Rate:              %.2f%%\n', 100 * passed_cases / total_cases);
 
-end %end of test_measureMoR1o_fast_VTR_multiCase
+end %end of test_measureMoR1o_fast_VTR
