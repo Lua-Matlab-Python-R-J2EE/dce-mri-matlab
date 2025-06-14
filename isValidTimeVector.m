@@ -80,6 +80,18 @@ function isValid = isValidTimeVector(t)
         return;
     end
 
+    % check for deciaml
+    if any(mod(t,1) ~= 0)
+       warning('Time vector contains non-integer values.');
+       return;
+    end
+
+    % minium length should be 2
+    if numel(t) < 2
+       warning('Time vector must contain at least two elements.');
+       return;
+    end
+
     % If all checks passed
     isValid = true;
 end
