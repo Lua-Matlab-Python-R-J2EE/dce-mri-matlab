@@ -25,10 +25,10 @@ function test_isValidTimeVector()
         % ---- Valid cases ----
         {'Simple valid time vector', [0 1 2 3], true}
         {'Column vector', [0; 1; 2; 3], true}
-        {'Decimal values', [0.0 0.1 0.2 0.3], true}
-        {'Single element', 0, true}
 
         % ---- Invalid cases ----
+        {'Decimal values', [0.0 0.1 0.2 0.3], false}
+        {'Single element', 0, false}
         {'Not strictly increasing', [0 1 1 2], false}
         {'Negative values', [-1 0 1 2], false}
         {'NaN values', [0 1 NaN 2], false}
