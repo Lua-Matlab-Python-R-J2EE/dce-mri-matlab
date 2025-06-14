@@ -73,48 +73,52 @@ function [ Y,Loc,FA,ST,SD,repT,Pid,Info,FA_ST,repT_ST] ...
 % DATA ORGANIZATION EXPLANATION 
 % =========================================================================
 %
-%---------------------------------
+% -------------------------------
 % Disk-Level Folder Organization:
-% --------------------------------
-% Each Flip Angle (FA) corresponded to a folder: tip02, tip05, tip10, tip18.
-% Each folder contained 6 subfolders, representing 6 different recovery times.
-% Inside each subfolder contained a stack of 2D DICOM images (forming a 3D volume)
-%-----------------------------------------------------------------------------------------
-%| Flip Angle (°) | Tip Folder | DICOM Subfolders (relative path)   | Notes              |
-%| -------------- | ---------- | ---------------------------------- | ------------------ |
-%|     2          |  tip02     |  02,   03,  04, 05, 06, 07         | → 6 recovery times |
-%|     5          |  tip05     |  08,   09,  10, 11, 12, 13         |                    |
-%|     10         |  tip10     |  14,   15,  16, 17, 18, 19         |                    |
-%|     18         |  tip18     |  20,   21,  22, 23, 24, 25         |                    |
-%-----------------------------------------------------------------------------------------
-%
-% Inside each subfolder is a DICOM image like 00010016, 00020016, etc.
-%
+% -------------------------------
+% Root folder: "Data/"
+% ├── Study categories: e.g., Lung/, Oncology/, Renal/
+% │
+% ├── Within a category (e.g., Lung/):
+% │   ├── phantom/    → phantom datasets
+% │   └── humans/     → human subject datasets
+% │       └── LPS###v# (e.g., LPS022v1, LPS022v2, ...) –– each is a subject/study
+% │           ├── DCE/        → dynamic contrast-enhanced scans
+% │           │   ├── 53/
+% │           │   ├── 43/
+% │           │   ├── 55/
+% │           │   └── 56/
+% │           │        └── contains multiple 2D DICOM slices forming a 3D volume
+% │           │
+% │           ├── TIP_1/ to TIP_4/ → variable flip angle datasets
+% │           │   ├── 2/, 3/, 4/, 5/, 6/, 7/
+% │           │   │     └── each contains 2D DICOM slices forming a 3D volume
+% │           │
+% │           └── VTR_1/ to VTR_4/ → variable TR datasets
+% │               ├── 38/, 39/, 40/, 41/
+% │               │     └── each contains 2D DICOM slices forming a 3D volume
+% │
+% │
 % ----------------------------
-% In-Memory Structure (Y):
+% In-Memory Data Organization:
 % ----------------------------
-% Y is a 2D cell array of size: [6 × 4]
-%   → Rows    (1 to 6): Recovery time points (from subfolders 02–07, etc.)
-%   → Columns (1 to 4): Flip angles (2°, 5°, 10°, 18°)
+% Depending on context (e.g., TIP or VTR), a 2D cell array can represent the data:
 %
-% Each Y{j,i} is 3D array of size [X × Y × Z], where Z is typically the number of slices.
-% Each Y{j,i} contains a stack of 2D DICOM images forming a 3D image volume, where,
-%   - j = time point (1 to 6)
-%   - i = flip angle index (1 to 4)
+%   Y{j,i} = 3D image volume at:
+%     - j = time point / recovery time index (e.g., subfolder 2, 3, ..., 7)
+%     - i = flip angle or TR index (e.g., TIP_1 to TIP_4 or VTR_1 to VTR_4)
 %
-%------------------------------------------------------------------------------------
-%|        | FA = 2° (Tip02) | FA = 5° (Tip05) | FA = 10° (Tip10) | FA = 18° (Tip18) |
-%| ------ | --------------- | --------------- | ---------------- | ---------------- |
-%| Time 1 |    Y{1,1}       |     Y{1,2}      |    Y{1,3}        |    Y{1,4}        |
-%| Time 2 |    Y{2,1}       |     Y{2,2}      |    Y{2,3}        |    Y{2,4}        |
-%| Time 3 |    Y{3,1}       |     Y{3,2}      |    Y{3,3}        |    Y{3,4}        |
-%| Time 4 |    Y{4,1}       |     Y{4,2}      |    Y{4,3}        |    Y{4,4}        |
-%| Time 5 |    Y{5,1}       |     Y{5,2}      |    Y{5,3}        |    Y{5,4}        |
-%| Time 6 |    Y{6,1}       |     Y{6,2}      |    Y{6,3}        |    Y{6,4}        |
-%------------------------------------------------------------------------------------
+% Each Y{j,i} is a 3D array [X × Y × Z] representing a DICOM volume.
+%
+% -----------------------------
+% Notes:
+% -----------------------------
+% - DCE folder contains multiple subfolders (e.g., 53, 55, etc.), each a 3D volume.
+% - TIP_x folders contain 6 time points (folders 2 to 7), each forming a 3D volume.
+% - VTR_x folders contain multiple TR points (e.g., folders 38 to 41), each a 3D volume.
 %
 % Example:
-%   Y{3,2} → a stack of 2D DICOM images forming a 3D volume at 3rd time point, 2nd flip angle (i.e., FA = 5°)
+%   Y{3,2} = volume from 3rd recovery time (e.g., folder "4") in TIP_2 folder
 %
 % =========================================================================
 
