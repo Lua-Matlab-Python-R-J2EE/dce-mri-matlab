@@ -38,6 +38,11 @@ function tSec = convertTimeMinToSec(t)
 %            with caution in clinical and pre-clinical settings. The author takes no
 %            responsibility of any kind about the output results from this code.
 %
+    % Check if input is a vector
+    if ~isvector(t)
+        warning('Input is not a vector.');
+        return;
+    end
 
     % Validate input
     if ~isValidTimeVector(t)
