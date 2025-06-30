@@ -1,0 +1,41 @@
+#--------------------------------------------------
+# Ignore OS-specific junk files
+#--------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#--------------------------------------------------
+# Ignore backup/swap files (common in editors like vim/emacs)
+#--------------------------------------------------
+*~
+*.swp
+*.swo
+*.bak
+
+#--------------------------------------------------
+# Ignore MATLAB temporary/auto-save files
+#--------------------------------------------------
+*~.m
+*.asv
+
+#--------------------------------------------------
+# Ignore general log or temp files (if you ever generate any)
+#--------------------------------------------------
+*.log
+*.tmp
+
+#--------------------------------------------------
+# Ignore MATLAB crash dump files
+#--------------------------------------------------
+matlab_crash_dump*
+
+#--------------------------------------------------
+# Ignore hidden folders for IDEs (optional: add if using VS Code, JetBrains, etc.)
+#--------------------------------------------------
+.vscode/
+.idea/
