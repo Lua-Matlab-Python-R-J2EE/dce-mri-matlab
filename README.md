@@ -3,7 +3,7 @@ Summary: A collection of general purpose utility functions written in MATLAB in 
 
 ## Running the tests
 
-Each function has a matching test in the `test/` folder (`test_<function>.m`, no inputs). From the repository root in MATLAB or GNU Octave:
+23 of the 32 functions have a matching test in the `test/` folder (`test_<function>.m`, no inputs). From the repository root in MATLAB or GNU Octave:
 
 ```matlab
 addpath(pwd); addpath(fullfile(pwd, 'test'));
