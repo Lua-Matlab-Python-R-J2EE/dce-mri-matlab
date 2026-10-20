@@ -6,8 +6,7 @@ function test_getNonfiniteMap()
 %
 % Author: Dr. Tanuj Puri 
 % Date: 01/2014 (adapted from test_getInfMap), updated 2025
-% Warning: This is an untested code/implementation and should be used
-% with caution in clinical and pre-clinical settings.
+% Research code. Not validated for clinical or diagnostic use.
 %
 fprintf('Running extended tests for getNonfiniteMap...\n');
 

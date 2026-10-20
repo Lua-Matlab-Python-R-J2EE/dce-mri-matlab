@@ -69,7 +69,7 @@ function [Mo, R1o, sse] = measureMoR1o_fast_VTR(signal, repTime, FA, doPlot, var
 %
 % AUTHOR: Dr. Tanuj Puri
 % DATE:   01/2014, updated 06/2025
-% WARNING: This code is untested and may not be suitable for clinical use.
+% Research code. Not validated for clinical or diagnostic use.
 %
 %--------------------------------------------------------------------------
 
