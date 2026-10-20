@@ -1,5 +1,17 @@
-# dceMRI-Matab
+# dceMRI-Matlab
 Summary: A collection of general purpose utility functions written in MATLAB in 2014 (updated in Octave in 2025) as part of a software toolkit for analyzing dynamic contrast-enhanced magnetic resonance imaging (dce-mri) data. The toolkit was designed to assess lung vascular properties and supports research into the effects of lipopolysaccharide (LPS), used as a human model of acute lung injury. The ultimate goal was to develop imaging biomarkers to inform and guide novel treatment strategies. For more information, please refer to the 'readme' folder.
+
+## Running the tests
+
+Each function has a matching test in the `test/` folder (`test_<function>.m`, no inputs). From the repository root in MATLAB or GNU Octave:
+
+```matlab
+addpath(pwd); addpath(fullfile(pwd, 'test'));
+tests = dir(fullfile('test', 'test_*.m'));
+for k = 1:numel(tests)
+    feval(tests(k).name(1:end-2));
+end
+```
 
 Disclaimer: Use at Your Own Risk. This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. The author makes no representations or warranties regarding the accuracy, completeness, or performance of this code. Users are solely responsible for determining the suitability of this software for their intended purpose and for ensuring that its use complies with all applicable laws and regulations. The author assumes no liability for any damages or consequences arising from the use of this software, including but not limited to direct, indirect, incidental, or consequential damages. Use of this software is entirely at your own risk. This code is intended for research and educational purposes only and should not be used in clinical or diagnostic settings without proper validation and regulatory approval. If you use this code in your work, please cite the relevant research as described in the 'readme' folder. Proper attribution supports continued development and collaboration.
 

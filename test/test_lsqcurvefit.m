@@ -4,8 +4,7 @@ function test_lsqcurvefit()
 %
 % Author: Dr. Tanuj Puri
 % Date: 01/2014
-% Warning: This is an untested code/implementation and should be used
-% with caution in clinical and pre-clinical settings.
+% Research code. Not validated for clinical or diagnostic use.
 %
 
   pass = 0; fail = 0;

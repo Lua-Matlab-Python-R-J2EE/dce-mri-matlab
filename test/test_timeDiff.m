@@ -5,9 +5,7 @@ function test_timeDiff()
 %
 % Author: Dr. Tanuj Puri
 % Date:   01/2014, updated 2025
-% Warning: This is an untested code/implementation and should be used
-% with caution in clinical and pre-clinical settings. The author takes no 
-% responsibility of any kind about the output results from this code.
+% Research code. Not validated for clinical or diagnostic use.
 %
 fprintf('\nRunning test_timeDiff()...\n');
 

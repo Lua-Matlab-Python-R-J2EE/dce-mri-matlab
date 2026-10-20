@@ -16,8 +16,7 @@ function [complex_Ct, count] = getComplexMap(R1t_, visualize)
 %
 % Author: Dr. Tanuj Puri 
 % Date: 01/2014 (adapted from getInfMap), updated 2025
-% Warning: This is an untested code/implementation and should be used
-% with caution in clinical and pre-clinical settings.
+% Research code. Not validated for clinical or diagnostic use.
 %
     %% 1. Validate number of inputs
     if nargin < 1

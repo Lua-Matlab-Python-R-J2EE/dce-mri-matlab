@@ -15,8 +15,7 @@ function [inf_Ct, count] = getInfMap(R1t_, visualize)
 %
 % Author: Dr. Tanuj Puri 
 % Date: 01/2014, updated 2025
-% Warning: This is an untested code/implementation and should be used
-% with caution in clinical and pre-clinical settings.
+% Research code. Not validated for clinical or diagnostic use.
 %
     %% 1. Validate number of inputs
     if nargin < 1

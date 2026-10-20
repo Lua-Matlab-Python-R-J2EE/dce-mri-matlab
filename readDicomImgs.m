@@ -36,10 +36,7 @@ function [X,Loc,FA,ST,SD,repT,Pid,Info] = readDicomImgs(Folder)
 % DATE  : 01/2014, comments updated 06/2025
 %
 % DISCLAIMER:
-%   This is untested code and should not be used for diagnostic purposes
-%   without validation. No guarantees are made about its correctness.
-%
-%   => PLEASE TEST BEFORE USING IT <=
+%   Research code. Not validated for clinical or diagnostic use.
 %
 %--------------------------------------------------------------------------
 

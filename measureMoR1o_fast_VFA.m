@@ -65,7 +65,7 @@ function [Mo, R1o, sse] = measureMoR1o_fast_VFA(signal, alpha, TR, doPlot, varar
 %--------------------------------------------------------------------------
 % AUTHOR:  Dr. Tanuj Puri
 % DATE:    01/2014, updated 06/2025
-% WARNING: For research use only. Not tested for clinical reliability.
+% WARNING: Research code. Not validated for clinical or diagnostic use.
 %--------------------------------------------------------------------------
 
   %----------------------------- INPUT CHECKS ------------------------------

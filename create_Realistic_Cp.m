@@ -9,8 +9,7 @@ function Cp = create_Realistic_Cp()
 %
 % Author: Dr. Tanuj Puri 
 % Date:   01/2014, updated 2025
-% Warning: This is an untested code/implementation and should be used
-% with caution in clinical and pre-clinical settings.
+% Research code. Not validated for clinical or diagnostic use.
 %
 %
     % Total number of time points (e.g., over a time span like 0–5 minutes)

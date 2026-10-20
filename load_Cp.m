@@ -14,15 +14,12 @@ function [Cp] = load_Cp(varargin)
 %
 %   Author: Dr. Tanuj Puri
 %   Date:   01/2014, updated 2025
-%   Warning: This is an untested code/implementation and should be used
-%            with caution in clinical and pre-clinical settings. The author  
-%            takes no responsibility of the output results from this code.
+%   Research code. Not validated for clinical or diagnostic use.
 %
 %% Handle input arguments
     if nargin == 1
         loc = varargin{1};
     else
-        % loc = 'D:\Cp_D_0.1.mat'; % hard coded path
 
         % Cp.mat has been provided (with variable named Cp) and should exist in the current directory; 
         % otherwise, a function named create_Realistic_Cp.m is available to generate it.  

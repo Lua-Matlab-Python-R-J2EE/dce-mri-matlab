@@ -53,11 +53,7 @@ function [ Y,Loc,FA,ST,SD,repT,Pid,Info,FA_ST,repT_ST] ...
 %   - Outputs Loc, SD, Pid correspond to last folder read (if multiple folders matched).
 %
 % WARNING:
-%   This is untested code and should be used cautiously in clinical
-%   or pre-clinical workflows. The author disclaims any responsibility
-%   for the correctness or safety of results produced.
-%
-%   => PLEASE TEST BEFORE USING IT <=
+%   Research code. Not validated for clinical or diagnostic use.
 %
 % AUTHOR: Dr. Tanuj Puri
 % DATE:   01/2014, updated 06/2025
@@ -82,7 +78,7 @@ function [ Y,Loc,FA,ST,SD,repT,Pid,Info,FA_ST,repT_ST] ...
 % ├── Within a category (e.g., Lung/):
 % │   ├── phantom/    → phantom datasets
 % │   └── humans/     → human subject datasets
-% │       └── LPS###v# (e.g., LPS022v1, LPS022v2, ...) –– each is a subject/study
+% │       └── SUBJ###v# (e.g., SUBJ001v1, SUBJ001v2, ...) –– each is a subject/study
 % │           ├── DCE/        → dynamic contrast-enhanced scans
 % │           │   ├── 53/
 % │           │   ├── 43/

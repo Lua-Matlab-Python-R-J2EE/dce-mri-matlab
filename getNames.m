@@ -22,8 +22,7 @@ function [outNames] = getNames(dirPath)
 %     individually validated.
 %
 % WARNING:
-%   This code is not clinically validated. Use with caution in sensitive
-%   environments.
+%   Research code. Not validated for clinical or diagnostic use.
 %--------------------------------------------------------------------------
 
     %=== Input Validation ===%

@@ -18,7 +18,7 @@ function [slope, intercept, yfit, R_squared] = linearFit(xVal, yVal)
 %
 %   Author: Dr. Tanuj Puri 
 %   Date: 01/2014, updated 2025
-%   Disclaimer: Untested code so use with caution at your own risk.
+%   Research code. Not validated for clinical or diagnostic use.
 %
 %% --- Input Validation ---
   if nargin ~= 2
